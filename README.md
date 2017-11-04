@@ -1,6 +1,6 @@
 # Prediction for different time lags of the electricity consumption
 
-This directory aims to give a strategy to predict electricity consumption based on GBM algorithms. 
+This directory aims to give a strategy to predict electricity consumption based on GBM algorithms for different time scale. 
 
 # 1) Data Preparation
 This project aimed to predict electricity consumption in a European city for 3 different time scale: 
@@ -36,10 +36,10 @@ The modelling used the same strategy for J+1 and J+14 models with different lag 
  - 06/2015  RMSE total : 1264.40266626 ; MAPE total : 0.0169174533141
  - 07/2015  RMSE total :  2143.19048742 ; MAPE total : 0.0248809474292
  
-A visualisation of predctions made for the J+14 model can be found on 
+A visualisation of predctions made for the J+14 model can be found on Youtube (see below link)
 [![IMAGE ALT TEXT HERE](https://github.com/alexandredelarrard/electricity_consumption_prediction/blob/master/output/J+14/14days_prediction_2015-01-03.png)](https://www.youtube.com/watch?v=A9YDZ0j-XaM)
 
-The A+3 model which aims to predict the dayly next three years consumption was performed through two different models. The first one predicted the long term trend which is highly correlated with the economic and demographic growth of the area, evven if such information were missing. The second part of the model was a GBM applied to the difference between hourly data and the predicted trend. Such a two times strategy needs to take care of overfitting.
+The A+3 model which aims to predict the dayly next three years consumption was performed through two different models. The first one predicted the long term trend which is highly correlated with the economic and demographic growth of the area, evven if such information were missing. The second part of the model was a GBM applied to the difference between hourly data and the predicted trend. Such a two times strategy needs to take care of overfitting as the second step data has to be deduced from the prediction of the trend and not from the true fitted trend. 
 
 Model A+3 (predict the next 3 years dayly) :
   - 2009-01-01  2011-12-31 : RMSE total = 3949.31555592;   MAPE totale = 4.83742720779
