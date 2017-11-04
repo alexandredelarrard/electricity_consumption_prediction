@@ -47,6 +47,6 @@ Model A+3 (predict the next 3 years dayly) :
   
 The climatic deduction aims at deducing the impact of temperature on the electricity consumption for the last 15 days. It was deduced by the differenciation between real values for the last 15 days (observed) and the prediction from the J+14 model with a fixed temperature of 16°C. The final result can be observed on the figure below:
 
-![alt text](https://github.com/alexandredelarrard/electricity_consumption_prediction/output/part_climatique.png)
+![alt text](https://github.com/alexandredelarrard/electricity_consumption_prediction/blob/master/output/Part_climatique/part_climatique.png)
 
   
